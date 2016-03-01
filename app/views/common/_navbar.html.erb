@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
+  <div class="container" id="nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                          <%= link_to root_path do %>
+                          <%= image_tag "YZU.png" %>
+                          <% end %>  
+                </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">         
+         <ul class="nav navbar-nav">
+            <li> <%= link_to('lab首頁', root_path(:anchor => "home"), class: "smoothScroll")%></li>
+            <!-- use :anchor to #id -->
+            <li> <%= link_to('研究成員', root_path(:anchor => "member"), class: "smoothScroll")%></li>
+            <li> <%= link_to('聯絡我們', root_path(:anchor => "contact"), class: "smoothScroll")%></li>
+            <li> <%= link_to("討論區",groups_path)%></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+        <% if current_user %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 Hi!, <%= current_user.name %>  
+                 <b class="caret"></b>
+              </a>
+                <ul class="dropdown-menu">
+                  <li> <%= link_to('登出', destroy_user_session_path, :method => :delete) %></li>
+                  <li> <%= link_to('修改密碼', edit_registration_path(:user)) %></li>
+                </ul>
+            </li>
+        <% else %>
+            <%= link_to new_registration_path(:user)do%>
+            <button class="btn btn-default navbar-btn">註冊</button><% end %>
+            <%= link_to new_session_path(:user)do %> 
+            <button class="btn btn-default navbar-btn">登入</button><% end %>
+        <% end %>
+          </ul>
+        </div>
+  </div>
+</nav>
+

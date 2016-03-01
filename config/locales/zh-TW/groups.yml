@@ -1,0 +1,7 @@
+zh-TW:
+  activerecord:
+    attributes:
+      group:
+        name: "活動名稱"
+        title: "討論區主題"
+        description: "描述"
