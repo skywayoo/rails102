@@ -4,6 +4,7 @@ gem "rails-i18n"
 gem 'devise-i18n-views'
 gem 'simple_form'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record

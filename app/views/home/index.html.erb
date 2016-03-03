@@ -97,14 +97,14 @@
 					<a href="#"> <%= image_tag("icon/google.png", class: "icon") %></a>		
 			</div>
 			<div class="member col-md-4">
-				<div class="wow flipInX" data-wow-delay="350ms"><%= image_tag("boss2.jpg", class: "img-circle student")%>
+				<div class="wow flipInX" data-wow-delay="300ms"><%= image_tag("boss2.jpg", class: "img-circle student")%>
 				<h2>陳名彥</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png", class: "icon") %></a>
 					<a href="https://www.facebook.com/profile.php?id=100001304190729&fref=ts"> <%= image_tag("icon/facebook.png", class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png", class: "icon") %></a>	
 			</div>
 			<div class="member col-md-4">
-				<div class="wow flipInX" data-wow-delay="600ms"><%= image_tag("boss3.jpg", class: "img-circle student")%>
+				<div class="wow flipInX" data-wow-delay="500ms"><%= image_tag("boss3.jpg", class: "img-circle student")%>
 				<h2>林見遠</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png", class: "icon") %></a>
 					<a href="https://www.facebook.com/chienyuan.lin.9?fref=ts"> <%= image_tag("icon/facebook.png", class: "icon") %></a>
@@ -114,21 +114,21 @@
 
 		<div class="row centered">
 			<div class="member col-md-4">
-				<div class="wow flipInX" data-wow-delay="850ms"><%= image_tag("boss1.jpg", class: "img-circle student")%>
+				<div class="wow flipInX" data-wow-delay="600ms"><%= image_tag("boss1.jpg", class: "img-circle student")%>
 				<h2>劉韋辰</h2></div>
 					<a href="#"><%= image_tag("icon/twitter.png" , class: "icon") %></a>
 					<a href="https://www.facebook.com/profile.php?id=100005058070616"> <%= image_tag("icon/facebook.png" , class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png" , class: "icon") %></a>		
 			</div>
 			<div class="member col-md-4">
-				<div class="wow flipInX" data-wow-delay="1100ms"><%= image_tag("boss5.jpg", class: "img-circle student")%>
+				<div class="wow flipInX" data-wow-delay="800ms"><%= image_tag("boss5.jpg", class: "img-circle student")%>
 				<h2>林子皓</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png" , class: "icon") %></a>
 					<a href="https://www.facebook.com/hao.lin.52?fref=ufi"> <%= image_tag("icon/facebook.png" , class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png" , class: "icon") %></a>	
 			</div>
 			<div class="member col-md-4">
-				<div class="wow flipInX" data-wow-delay="1350ms"><%= image_tag("bossx.jpg", class: "img-circle student")%>
+				<div class="wow flipInX" data-wow-delay="1000ms"><%= image_tag("bossx.jpg", class: "img-circle student")%>
 				<h2>xxx</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png" , class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/facebook.png" , class: "icon") %></a>
@@ -136,17 +136,33 @@
 			</div>
 		</div>
 	</div>
-
+	<div class="row centered media-wrap">
+		<div class="col-md-4">
+			<div class="media wow bounceInLeft" data-wow-delay="100ms"><i class="fa fa-group fa-5x"></i></div>
+			<span class="counter"><%=User.count(:id)+123%></span>
+			<span class="counter-title">會員用戶</span>
+		</div>
+		<div class="col-md-4">
+			<div class="media wow bounceInDown" data-wow-delay="400ms"><i class="fa fa-comments-o fa-5x"></i></div>
+			<span class="counter"><%= Group.count(:id)+34%></span>
+			<span class="counter-title">討論區主題</span>
+		</div>
+		<div class="col-md-4">
+			<div class="media wow bounceInRight" data-wow-delay="700ms"><i class="fa fa-signal fa-5x"></i></div>
+			<span class="counter" id="fblike">0</span>
+			<span class="counter-title">粉絲團按讚數</span>
+		</div>
+	</div>
 	<!-- ==== GREYWRAP ==== -->
 		<div id="greywrap">
 				<div class="row" id="contact">
 					<div class="col-md-7 centered">
-						<div class="wow slideInLeft" data-wow-duration="800ms" data-wow-delay="500ms">
+						<div class="wow slideInLeft" data-wow-duration="800ms" data-wow-delay="600ms">
 							<%= image_tag("macbook.png", class: "image")%>
 						</div>
 					</div>
 					<div class="col-md-5">
-						<div class="wow fadeInDown" data-wow-duration="800ms" data-wow-delay="1s" >
+						<div class="wow fadeInDown" data-wow-duration="800ms" data-wow-delay="1000ms" >
 							<h1 align="center">聯絡資訊</h1>
 							<br>
 							<p align="left"><%= image_tag("icon/mail.png", class: "icon")%><font size="5"> 　lab1609@gmail.com</font></p>

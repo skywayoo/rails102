@@ -8,6 +8,7 @@ Rails.application.config.assets.precompile += %w( wow.js )
 Rails.application.config.assets.precompile += %w( jquery.typer.min.js )
 Rails.application.config.assets.precompile += %w( type.js )
 Rails.application.config.assets.precompile += %w( jquery.counterup.js )
+Rails.application.config.assets.precompile += %w( like.js )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

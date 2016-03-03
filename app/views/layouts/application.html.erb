@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="abc()">
 	<div class="container-fluid">
 	<%= render "common/navbar" %>	
 		<div class="row">
@@ -20,6 +20,7 @@
 <%= javascript_include_tag 'jquery.counterup'%>
 <%= javascript_include_tag 'jquery.typer.min'%>
 <%= javascript_include_tag 'wow'%>
+<%= javascript_include_tag 'like'%>
 <%= javascript_include_tag 'type'%>
 </body>
 </html>
