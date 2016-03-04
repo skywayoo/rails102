@@ -1,10 +1,11 @@
-  	<div class="row centered" id="home">
+  	<div class="row centered headwrap" id="home">
+	<div class="head-text">
 	<h1><b>資訊管理學系</b></h1>
 	<h1>決策分析與管理  研究室</h1>
-	<h1><span data-typer-targets="你好~, Hello~, Hola~, Bonjour~"></span>下面是我們的實驗室</h1>
-	<h1>Room:<span class="counter">1609</span></h1>
+	<h1><span data-typer-targets="你好~, Hello~, Hola~, Bonjour~"></span></h1>
 	</div>
-	<div class="row" id="greywrap">
+	</div>
+	<div class="row carouselwrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -143,13 +144,13 @@
 			<span class="counter-title">會員用戶</span>
 		</div>
 		<div class="col-md-4">
-			<div class="media wow bounceInDown" data-wow-delay="400ms"><i class="fa fa-comments-o fa-5x"></i></div>
-			<span class="counter"><%= Group.count(:id)+34%></span>
+			<div class="media wow bounceInDown" data-wow-delay="800ms"><i class="fa fa-comments-o fa-5x"></i></div>
+			<span class="counter"><%= Group.count(:id)+45%></span>
 			<span class="counter-title">討論區主題</span>
 		</div>
 		<div class="col-md-4">
-			<div class="media wow bounceInRight" data-wow-delay="700ms"><i class="fa fa-signal fa-5x"></i></div>
-			<span class="counter" id="fblike">0</span>
+			<div class="media wow bounceInRight" data-wow-delay="1500ms"><i class="fa fa-signal fa-5x"></i></div>
+			<span class="counter" id="fblike"></span>
 			<span class="counter-title">粉絲團按讚數</span>
 		</div>
 	</div>
@@ -169,7 +170,7 @@
 							<p align="left"><%= image_tag("icon/location.png", class: "icon")%><font size="5"> 　資訊學院一館六樓 1609實驗室 </font></p>
 							<p align="left"><%= image_tag("icon/call.png", class: "icon")%><font size="5"> 　(03)4638800,分機1609</font></p>
 							<br>
-							<button class="btn btn-success btn-lg">聯絡我們</button>
+							<a href="https://www.facebook.com/%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E7%AE%A1%E7%90%86%E5%AD%B8%E7%B3%BBYuan-Ze-University-Information-Management-1676425955944996/?fref=ts" class="btn btn-success btn-lg">聯絡我們</a>
 						</div>			
 					</div>
 				</div>
