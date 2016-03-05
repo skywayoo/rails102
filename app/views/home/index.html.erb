@@ -1,11 +1,16 @@
-  	<div class="row centered headwrap" id="home">
-	<div class="head-text">
-	<h1><b>資訊管理學系</b></h1>
-	<h1>決策分析與管理  研究室</h1>
-	<h1><span data-typer-targets="你好~, Hello~, Hola~, Bonjour~"></span></h1>
+  	<div id="headwrap">
+  	<div class="row centered" id="home">
+		<div class="head-text">
+			<h1><b>資訊管理學系</b></h1>
+			<h1>決策分析與管理  研究室</h1>
+			<h1>No<span data-typer-targets=" Pain., Gain."></span></h1>
+		</div>
 	</div>
 	</div>
-	<div class="row carouselwrap">
+	<div class="">
+		<div class="row"></div>
+	</div>
+	<div id="carouselwrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -50,61 +55,58 @@
       </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-		</div>
+    	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      		<span class="sr-only">Previous</span>
+    	</a>
+    	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     		<span class="sr-only">Next</span>
+    	</a>
 	</div>
 	</div>
-	<div class="row pageheader" id="member">
+	</div>
+	<div id="memberwrap">
+	<div class="row" id="member">
 			<h1 class="centered"><b>研究成員</b></h1>
 			<hr>
-			<br>
 		<div class="row centered" >
-			<div class="col-md-4 col-md-offset-1">
+			<div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
 			<div class="wow fadeInDown" data-wow-duration="800ms" data-wow-delay="500ms">
-				<%= image_tag("teacher.jpg" , class: "img-circle boss")%>
-				<br>		
-				<br>		
-				<h2><b>許嘉裕</b></h2>
-					<br>				
+				<%= image_tag("teacher.jpg" , class: "img-circle boss")%>		
+				<h2><b>許嘉裕</b></h2>				
 			</div>
 			</div>
-			<div class="col-md-4 col-md-offset-2">
+			<div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
 				<div class="wow fadeInDown" data-wow-duration="800ms" data-wow-delay="700ms">
 					<h2>Chia-Yu Hsu</h2>
 					<h2>副教授</h2>
 					<br>
 					<br>
-					<p align="left"><font size="5">電話: (03) 463-8800 分機 2793</font></p>
-					<p align="left"><font size="5">傳真: (03) 463-2077</font></p>
-					<p align="left"><font size="5">辦公地址: 六館七樓 R60704</font></p>
-					<p align="left"><font size="5">E-Mail: cyhsu@saturn.yzu.edu.tw</font></p>
+					<p class="info"><font size="5">電話: (03) 463-8800 分機 2793</font></p>
+					<p class="info"><font size="5">傳真: (03) 463-2077</font></p>
+					<p class="info"><font size="5">辦公地址: 六館七樓 R60704</font></p>
+					<p class="info"><font size="5">E-Mail: cyhsu@saturn.yzu.edu.tw</font></p>
 				</div>
 			</div>
 		</div>
 	<hr>
-		<div class="row centered">
-			<div class="member col-md-4">
+		<div class="row-fluid centered">
+			<div class="member col-md-4 col-sm-6">
 				<div class="wow flipInX" data-wow-delay="100ms"><%= image_tag("boss4.jpg", class: "img-circle student")%>
 				<h2>鍾世恩</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png", class: "icon") %></a>
 					<a href="https://www.facebook.com/shihen.jhong?fref=ts"> <%= image_tag("icon/facebook.png", class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png", class: "icon") %></a>		
 			</div>
-			<div class="member col-md-4">
+			<div class="member col-md-4 col-sm-6 ">
 				<div class="wow flipInX" data-wow-delay="300ms"><%= image_tag("boss2.jpg", class: "img-circle student")%>
 				<h2>陳名彥</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png", class: "icon") %></a>
 					<a href="https://www.facebook.com/profile.php?id=100001304190729&fref=ts"> <%= image_tag("icon/facebook.png", class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png", class: "icon") %></a>	
 			</div>
-			<div class="member col-md-4">
+			<div class="member col-md-4 col-sm-6">
 				<div class="wow flipInX" data-wow-delay="500ms"><%= image_tag("boss3.jpg", class: "img-circle student")%>
 				<h2>林見遠</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png", class: "icon") %></a>
@@ -113,23 +115,23 @@
 			</div>
 		</div>
 
-		<div class="row centered">
-			<div class="member col-md-4">
+		<div class="row-fluid centered">
+			<div class="member col-md-4 col-sm-6">
 				<div class="wow flipInX" data-wow-delay="600ms"><%= image_tag("boss1.jpg", class: "img-circle student")%>
 				<h2>劉韋辰</h2></div>
 					<a href="#"><%= image_tag("icon/twitter.png" , class: "icon") %></a>
 					<a href="https://www.facebook.com/profile.php?id=100005058070616"> <%= image_tag("icon/facebook.png" , class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png" , class: "icon") %></a>		
 			</div>
-			<div class="member col-md-4">
+			<div class="member col-md-4 col-sm-6">
 				<div class="wow flipInX" data-wow-delay="800ms"><%= image_tag("boss5.jpg", class: "img-circle student")%>
 				<h2>林子皓</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png" , class: "icon") %></a>
 					<a href="https://www.facebook.com/hao.lin.52?fref=ufi"> <%= image_tag("icon/facebook.png" , class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/google.png" , class: "icon") %></a>	
 			</div>
-			<div class="member col-md-4">
-				<div class="wow flipInX" data-wow-delay="1000ms"><%= image_tag("bossx.jpg", class: "img-circle student")%>
+			<div class="member col-md-4 col-sm-6">
+				<div class="wow flipInX" data-wow-delay="1000ms"><%= image_tag("boss1.jpg", class: "img-circle student")%>
 				<h2>xxx</h2></div>
 					<a href="#"> <%= image_tag("icon/twitter.png" , class: "icon") %></a>
 					<a href="#"> <%= image_tag("icon/facebook.png" , class: "icon") %></a>
@@ -137,19 +139,20 @@
 			</div>
 		</div>
 	</div>
-	<div class="row centered media-wrap">
-		<div class="col-md-4">
+	</div>
+	<div class="row centered" id="mediawrap">
+		<div class="col-md-4 col-sm-4 col-xs-4">
 			<div class="media wow bounceInLeft" data-wow-delay="100ms"><i class="fa fa-group fa-5x"></i></div>
 			<span class="counter"><%=User.count(:id)+123%></span>
 			<span class="counter-title">會員用戶</span>
 		</div>
-		<div class="col-md-4">
-			<div class="media wow bounceInDown" data-wow-delay="800ms"><i class="fa fa-comments-o fa-5x"></i></div>
+		<div class="col-md-4 col-sm-4 col-xs-4">
+			<div class="media wow bounceInDown" data-wow-delay="500ms"><i class="fa fa-comments-o fa-5x"></i></div>
 			<span class="counter"><%= Group.count(:id)+45%></span>
 			<span class="counter-title">討論區主題</span>
 		</div>
-		<div class="col-md-4">
-			<div class="media wow bounceInRight" data-wow-delay="1500ms"><i class="fa fa-signal fa-5x"></i></div>
+		<div class="col-md-4 col-sm-4 col-xs-4">
+			<div class="media wow bounceInRight" data-wow-delay="900ms"><i class="fa fa-thumbs-o-up fa-5x"></i></div>
 			<span class="counter" id="fblike"></span>
 			<span class="counter-title">粉絲團按讚數</span>
 		</div>
@@ -157,19 +160,18 @@
 	<!-- ==== GREYWRAP ==== -->
 		<div id="greywrap">
 				<div class="row" id="contact">
-					<div class="col-md-7 centered">
-						<div class="wow slideInLeft" data-wow-duration="800ms" data-wow-delay="600ms">
+					<div class="col-md-7 centered col-sm-7">
+						<div class="info wow slideInLeft" data-wow-duration="800ms" data-wow-delay="800ms">
 							<%= image_tag("macbook.png", class: "image")%>
 						</div>
 					</div>
-					<div class="col-md-5">
-						<div class="wow fadeInDown" data-wow-duration="800ms" data-wow-delay="1000ms" >
+					<div class="col-md-5 col-sm-5">
+						<div class="wow fadeInDown" data-wow-duration="800ms" data-wow-delay="1200ms" >
 							<h1 align="center">聯絡資訊</h1>
 							<br>
-							<p align="left"><%= image_tag("icon/mail.png", class: "icon")%><font size="5"> 　lab1609@gmail.com</font></p>
-							<p align="left"><%= image_tag("icon/location.png", class: "icon")%><font size="5"> 　資訊學院一館六樓 1609實驗室 </font></p>
-							<p align="left"><%= image_tag("icon/call.png", class: "icon")%><font size="5"> 　(03)4638800,分機1609</font></p>
-							<br>
+							<p class="info"><%= image_tag("icon/mail.png", class: "icon")%><font size="5"> 　lab1609@gmail.com</font></p>
+							<p class="info"><%= image_tag("icon/location.png", class: "icon")%><font size="5"> 　資訊學院一館六樓 1609實驗室 </font></p>
+							<p class="info"><%= image_tag("icon/call.png", class: "icon")%><font size="5"> 　(03)4638800,分機1609</font></p>
 							<a href="https://www.facebook.com/%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8%E8%B3%87%E8%A8%8A%E7%AE%A1%E7%90%86%E5%AD%B8%E7%B3%BBYuan-Ze-University-Information-Management-1676425955944996/?fref=ts" class="btn btn-success btn-lg">聯絡我們</a>
 						</div>			
 					</div>

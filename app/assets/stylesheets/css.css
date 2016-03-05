@@ -1,20 +1,26 @@
-	.headwrap{
+	#headwrap{
 		background-image: url("headwrap.jpg");
 		background-repeat:no-repeat;
 		background-size:cover;
 		height: 420px;
 		background-position: 50% 70%;  
 	}
-	.media-wrap{
+	#mediawrap{
 		background-image: url("blackboard.jpg");
-		background-repeat:no-repeat;
+		background-repeat:repeat;
 		background-size:cover;
 		background-position:bottom;		
-		padding: 60px;
+		padding: 90px;
+		margin: auto;
 		width: 100%;
 	}
 	.media{
 		color:white;
+	}
+	#carouselwrap{
+		background-image: url("paint.png");
+		background-repeat:repeat;
+		background-size:contain; 
 	}
 	.image{
 		width: 80%;
@@ -37,8 +43,9 @@
 		margin-top: 60px;
 		margin-bottom: 10px;
 	}
-	.pageheader{
+	#memberwrap{
     padding-top: 75px;
+	padding-bottom: 30px;
 	}
 	span[data-typer-targets] {
  	display: inline-block;
@@ -86,7 +93,7 @@
 	}
 	.icon{
 		width: 10%;
-  		height: 10%;
+  		height: auto;
 		background-repeat:no-repeat;
 		background-size:cover;
 		background-position:center center;
@@ -96,11 +103,37 @@
     padding-top: 10px;
     border-bottom: 1px solid #ddd;
     text-align: center;
+    padding-bottom: 10px;
 	}
 
 	.row{
-	margin: 30px;
+	margin-top: 10px;
 	}
 	.mainrow{
 	margin-top: 82px;
+	}
+	button.navbar-toggle{
+		margin-top: +24px;
+	}
+	.member{
+		padding-top: 20px;
+	}
+	div.block{
+		display: block;
+	}
+	h2.info,p.info{
+	text-align: left;
+	}
+
+	@media (max-width: 767px){
+		h2.info,p.info{
+		text-align: center;
+		}
+		.icon{
+		width:7%;
+		height: auto;
+		}
+		#greywrap{
+			padding-bottom: 10px
+		}
 	}
